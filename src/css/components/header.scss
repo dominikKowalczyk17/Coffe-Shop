@@ -62,6 +62,10 @@
         transform: scaleY(0);
         transform-origin: top;
 
+        &.active {
+            transform: scaleY(1);
+        }
+
         input {
             height: 100%;
             width: 100%;
@@ -84,12 +88,128 @@
     }
 
     &__cart-items-container {
-        position: top;
+        position: absolute;
         top: 100%;
-        right: 0;
+        right: -100%;
         height: calc(100vh - 9.5rem);
         width: 35rem;
         background: #fff;
         padding: 0 1.5rem;
+
+        &.active {
+            right: 0;
+        }
+    }
+
+    &__cart-item {
+        position: relative;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .fa-times {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: $black;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        img {
+            height: 7rem;
+        }
+
+        &--content {
+            h3 {
+                font-size: 2rem;
+                color: $black;
+                padding-bottom: .5rem;
+            }
+        }
+
+        &--price {
+            font-size: 1.5rem;
+            color: $main-color;
+        }
+    }
+
+    &__cart--btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .9rem 3rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background: $main-color;
+        cursor: pointer;
+
+        &:hover {
+            letter-spacing: .2rem;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        &__navbar {
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            background: #fff;
+            width: 30rem;
+            height: calc(100vh - 9.5rem);
+
+            &.active {
+                right: 0;
+            }
+
+            &__search-form {
+                width: 90%;
+                right: 2rem;
+            }
+
+            a {
+                color: $black;
+                display: block;
+                margin: 1.5rem;
+                padding: .5rem;
+                font-size: 2rem;
+
+                &:hover {
+                    color: $main-color;
+                    border-bottom: 0.1rem solid $main-color;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+
+        &__icons {
+            #menu-btn {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
     }
 }
