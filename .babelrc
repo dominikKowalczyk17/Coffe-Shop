@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "modules": false
+      }
+    ]
+    // Replace "stage-0" with specific plugins you need from this preset
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "compact": true,
+  "comments": true,
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "useBuiltIns": "usage",
+            "corejs": 3, // Specify the core-js version
+            "modules": false
+          }
+        ]
+      ]
+    }
+  }
+}
