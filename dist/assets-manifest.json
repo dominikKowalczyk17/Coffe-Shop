@@ -1,0 +1,10 @@
+{
+  "app.js": "app.js",
+  "app.js.map": "app.js.map",
+  "gfx/home-img.jpg": "gfx/home-img.jpg",
+  "gfx/logo.png": "gfx/logo.png",
+  "index.html": "index.html",
+  "style.css": "style.css",
+  "style.css.map": "style.css.map",
+  "style.js": "style.js"
+}

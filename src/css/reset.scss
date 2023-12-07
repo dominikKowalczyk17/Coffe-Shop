@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        width: 8rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 5rem;
+    }
+}
+
+body {
+    background: $bg;
+}
