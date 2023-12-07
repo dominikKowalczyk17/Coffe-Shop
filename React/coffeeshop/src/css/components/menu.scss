@@ -1,0 +1,73 @@
+.menu {
+    &__heading {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+
+        span {
+            color: $main-color;
+            text-transform: uppercase;
+        }
+    }
+
+    &__box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    &__box {
+        padding: 5rem;
+        text-align: center;
+        border: $border;
+
+        h3 {
+            color: #eee;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+
+        &:hover {
+            background: #eee
+        }
+
+        &:hover>* {
+            color: $black;
+        }
+
+        img {
+            height: 10rem;
+        }
+    }
+
+    &__price {
+        color: #fff;
+        font-size: 2.5rem;
+        padding: .5rem 0;
+
+        span {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+        }
+    }
+
+    &__btn {
+        width: 30%;
+        text-align: center;
+        border-radius: 1.6rem;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .9rem 2rem;
+        font-size: 1.5rem;
+        color: #fff;
+        background: $main-color;
+        cursor: pointer;
+
+        &:hover {
+            letter-spacing: .3rem;
+        }
+    }
+}
