@@ -1,0 +1,69 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../../public/home-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        max-width: 60rem;
+
+        h3 {
+            font-size: 6rem;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: lighter;
+            line-height: 1.8;
+            padding: 1rem 0;
+            color: #eee;
+        }
+    }
+
+    &__btn {
+        width: 30%;
+        text-align: center;
+        border-radius: 1.6rem;
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .9rem 3rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background: $main-color;
+        cursor: pointer;
+
+        &:hover {
+            letter-spacing: .2rem;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+
+        &__content {
+            h3 {
+                font-size: 4.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .home {
+        &__btn {
+            width: 65%;
+        }
+    }
+}

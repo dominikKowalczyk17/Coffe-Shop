@@ -1,0 +1,42 @@
+.footer {
+    background: $black;
+    text-align: center;
+
+    &__share {
+        padding: 1rem 0;
+
+        a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: #fff;
+            border: $border;
+            margin: .3rem;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: $main-color;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1rem;
+
+        a {
+            padding: .7rem 2rem;
+            color: #fff;
+            border: $border;
+            font-size: 2rem;
+
+            &:hover {
+                background-color: $main-color;
+            }
+        }
+    }
+}
