@@ -1,0 +1,49 @@
+.contact {
+    &__heading {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+
+        span {
+            color: $main-color;
+            text-transform: uppercase;
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        background: $black;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        form {
+            flex: 1 1 45rem;
+            padding: 5rem 2rem;
+            text-align: center;
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                color: #fff;
+            }
+        }
+    }
+
+    &__map {
+        flex: 1 1 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__inputBox {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background: $black;
+        border: $border;
+    }
+}

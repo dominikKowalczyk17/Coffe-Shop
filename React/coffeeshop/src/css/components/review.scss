@@ -1,0 +1,59 @@
+.review {
+    &__heading {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 3.5rem;
+        font-size: 4rem;
+
+        span {
+            color: $main-color;
+            text-transform: uppercase;
+        }
+    }
+
+    &__box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    &__box {
+        border: $main-color;
+        text-align: center;
+        padding: 3rem 2rem;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            color: #ccc;
+            padding: 2rem 0;
+        }
+
+        h3 {
+            padding: 1rem 0;
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+
+    &__user {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__stars {
+        i {
+            font-size: 1.5rem;
+            color: $main-color;
+        }
+    }
+
+    &__quote {
+        height: 5rem;
+        width: auto;
+    }
+
+}
