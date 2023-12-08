@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import Products from "./Products";
 import Review from "./Review";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import "./css/App.scss";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Products />
       <Review />
       <Contact />
+      <Footer />
     </div>
   );
 };

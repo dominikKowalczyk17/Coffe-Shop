@@ -28,7 +28,7 @@ const Contact = () => {
             <span className="fas fa-phone"></span>
             <input type="number" placeholder="number" />
           </div>
-          <input type="submit" value="contact now" />
+          <input type="submit" value="contact now" className="contact__btn" />
         </form>
       </div>
     </section>
