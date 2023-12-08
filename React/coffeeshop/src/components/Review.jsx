@@ -10,12 +10,12 @@ const Review = () => {
       </h1>
       <div className="review__box-container">
         <div className="review__box">
-          <img src={quoteImg} className="review__quote" />
+          <img src={quoteImg} className="review__quote" alt="img" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus
             est sapiente magni consequuntur aut repellendus qui et vero magnam.
           </p>
-          <img src={userImg} className="review__user" />
+          <img src={userImg} className="review__user" alt="img" />
           <h3>John Doe</h3>
           <div className="review__stars">
             <i className="fas fa-star"></i>
@@ -26,12 +26,12 @@ const Review = () => {
           </div>
         </div>
         <div className="review__box">
-          <img src={quoteImg} className="review__quote" />
+          <img src={quoteImg} className="review__quote" alt="img" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus
             est sapiente magni consequuntur aut repellendus qui et vero magnam.
           </p>
-          <img src={userImg} className="review__user" />
+          <img src={userImg} className="review__user" alt="img" />
           <h3>John Doe</h3>
           <div className="review__stars">
             <i className="fas fa-star"></i>
@@ -42,12 +42,12 @@ const Review = () => {
           </div>
         </div>
         <div className="review__box">
-          <img src={quoteImg} className="review__quote" />
+          <img src={quoteImg} className="review__quote" alt="img" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus
             est sapiente magni consequuntur aut repellendus qui et vero magnam.
           </p>
-          <img src={userImg} className="review__user" />
+          <img src={userImg} className="review__user" alt="img" />
           <h3>John Doe</h3>
           <div className="review__stars">
             <i className="fas fa-star"></i>

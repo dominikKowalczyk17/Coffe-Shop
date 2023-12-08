@@ -44,18 +44,34 @@ const Header = () => {
     };
   }, []);
 
+  const handleMenuClick = () => {
+    closeAll();
+  };
+
   return (
     <header className="header" ref={headerRef}>
       <a href="#" className="header__logo">
         <img src={logo} alt="logo" />
       </a>
       <nav className={`header__navbar ${navbarActive ? "active" : ""}`}>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#products">Products</a>
-        <a href="#review">Review</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" onClick={handleMenuClick}>
+          Home
+        </a>
+        <a href="#about" onClick={handleMenuClick}>
+          About
+        </a>
+        <a href="#menu" onClick={handleMenuClick}>
+          Menu
+        </a>
+        <a href="#products" onClick={handleMenuClick}>
+          Products
+        </a>
+        <a href="#review" onClick={handleMenuClick}>
+          Review
+        </a>
+        <a href="#contact" onClick={handleMenuClick}>
+          Contact
+        </a>
       </nav>
       <div className="header__icons">
         <div

@@ -4,7 +4,9 @@ import product1 from "../gfx/product-img1.png";
 const Products = () => {
   return (
     <section className="products" id="products">
-      <h1 className="products__heading"></h1>
+      <h1 className="products__heading">
+        <span>our</span> products
+      </h1>
       <div className="products__box-container">
         <div className="products__box">
           <div className="products__icons">
