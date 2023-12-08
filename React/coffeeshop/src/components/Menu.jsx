@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "./gfx/menu-img1.png";
-import img2 from "./gfx/menu-img2.png";
-import img3 from "./gfx/menu-img3.png";
-import img4 from "./gfx/menu-img4.png";
-import img5 from "./gfx/menu-img5.png";
-import img6 from "./gfx/menu-img6.png";
+import img1 from "../gfx/menu-img1.png";
+import img2 from "../gfx/menu-img2.png";
+import img3 from "../gfx/menu-img3.png";
+import img4 from "../gfx/menu-img4.png";
+import img5 from "../gfx/menu-img5.png";
+import img6 from "../gfx/menu-img6.png";
 
 const Menu = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import quoteImg from "./gfx/quoteImg.png";
-import userImg from "./gfx/userImg.png";
+import quoteImg from "../gfx/quoteImg.png";
+import userImg from "../gfx/userImg.png";
 
 const Review = () => {
   return (
