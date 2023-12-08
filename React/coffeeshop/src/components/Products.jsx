@@ -1,5 +1,5 @@
 import React from "react";
-import product1 from "./public/product-img1.png";
+import product1 from "./gfx/product-img1.png";
 
 const Products = () => {
   return (

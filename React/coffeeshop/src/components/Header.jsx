@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "./public/logo.png";
+import logo from "./gfx/logo.png";
 
 const Header = () => {
   const [navbarActive, setNavbarActive] = useState(false);
